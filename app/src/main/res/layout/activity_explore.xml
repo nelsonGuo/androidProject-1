@@ -15,6 +15,7 @@
         android:layout_weight="1">
 
     </FrameLayout>
+
     <ListView
         android:id="@+id/fountainListView"
         android:layout_width="match_parent"
