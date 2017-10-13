@@ -1,0 +1,1262 @@
+[
+{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1169
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Terry Hughes Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":86
+,"X":"-122.911154301969"
+,"Y":"49.2212695372246"
+,"json_geometry":{"type":"Point","coordinates":[-122.911154301969,49.2212695372246]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":730
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Moody Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":145
+,"X":"-122.927906145361"
+,"Y":"49.2117638442743"
+,"json_geometry":{"type":"Point","coordinates":[-122.927906145361,49.2117638442743]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1217
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"blue metal"
+,"ParkName":"Connaught Heights Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":254
+,"X":"-122.954627699358"
+,"Y":"49.2032697797038"
+,"json_geometry":{"type":"Point","coordinates":[-122.954627699358,49.2032697797038]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1267
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Ryall Park Grounds"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":304
+,"X":"-122.942307099608"
+,"Y":"49.1852613199032"
+,"json_geometry":{"type":"Point","coordinates":[-122.942307099608,49.1852613199032]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1637
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":469
+,"X":"-122.925610697148"
+,"Y":"49.1955743738086"
+,"json_geometry":{"type":"Point","coordinates":[-122.925610697148,49.1955743738086]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":24
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"at native memorial"
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":608
+,"X":"-122.905095263763"
+,"Y":"49.2142703845388"
+,"json_geometry":{"type":"Point","coordinates":[-122.905095263763,49.2142703845388]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":378
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Waterfront Esplanade"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":615
+,"X":"-122.922109786979"
+,"Y":"49.1982238390391"
+,"json_geometry":{"type":"Point","coordinates":[-122.922109786979,49.1982238390391]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1788
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"blue metal"
+,"ParkName":"Canada Games Pool"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":810
+,"X":"-122.908225494717"
+,"Y":"49.2210876118876"
+,"json_geometry":{"type":"Point","coordinates":[-122.908225494717,49.2210876118876]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":234
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"City Hall Grounds"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":"MONUMENT WITH DRINKING FOUNTAIN\"TIM\" - TIMOTHY JACKSON MAHONY - 1924"
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1053
+,"X":"-122.911524889257"
+,"Y":"49.2063899348634"
+,"json_geometry":{"type":"Point","coordinates":[-122.911524889257,49.2063899348634]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":191
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Friendship Gardens"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":"GYRO CLUB 1974"
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1127
+,"X":"-122.910596029956"
+,"Y":"49.2075278790323"
+,"json_geometry":{"type":"Point","coordinates":[-122.910596029956,49.2075278790323]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":133
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1151
+,"X":"-122.905723176082"
+,"Y":"49.2155725231881"
+,"json_geometry":{"type":"Point","coordinates":[-122.905723176082,49.2155725231881]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":86
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1238
+,"X":"-122.908324065408"
+,"Y":"49.2163326570142"
+,"json_geometry":{"type":"Point","coordinates":[-122.908324065408,49.2163326570142]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":1033
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"blue metal"
+,"ParkName":"Sapperton Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1472
+,"X":"-122.894453000521"
+,"Y":"49.2277671403011"
+,"json_geometry":{"type":"Point","coordinates":[-122.894453000521,49.2277671403011]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":682
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Moody Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1480
+,"X":"-122.925485735161"
+,"Y":"49.2112901312662"
+,"json_geometry":{"type":"Point","coordinates":[-122.925485735161,49.2112901312662]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":585
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"Water Tap"
+,"ParkName":"Hume Park Lower"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1522
+,"X":"-122.890778763919"
+,"Y":"49.2345050401878"
+,"json_geometry":{"type":"Point","coordinates":[-122.890778763919,49.2345050401878]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":594
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"Water Tap"
+,"ParkName":"Hume Park Lower"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1530
+,"X":"-122.889702907665"
+,"Y":"49.2333539632699"
+,"json_geometry":{"type":"Point","coordinates":[-122.889702907665,49.2333539632699]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":549
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":1965
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":"Concrete. This fountian is currently decomissioned."
+,"ParkName":"Hume Park Lower"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":1718
+,"X":"-122.891745800044"
+,"Y":"49.2356007695907"
+,"json_geometry":{"type":"Point","coordinates":[-122.891745800044,49.2356007695907]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2023
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":""
+,"ParkName":"Hume Park Lower"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10505
+,"X":"-122.890782929381"
+,"Y":"49.2334399855436"
+,"json_geometry":{"type":"Point","coordinates":[-122.890782929381,49.2334399855436]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2025
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Westburnco Sports Courts"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10506
+,"X":"-122.90608565062"
+,"Y":"49.2295297764261"
+,"json_geometry":{"type":"Point","coordinates":[-122.90608565062,49.2295297764261]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":23
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":null
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10507
+,"X":"-122.897802426736"
+,"Y":"49.2113669105781"
+,"json_geometry":{"type":"Point","coordinates":[-122.897802426736,49.2113669105781]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2014
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10509
+,"X":"-122.898566505479"
+,"Y":"49.2138561901016"
+,"json_geometry":{"type":"Point","coordinates":[-122.898566505479,49.2138561901016]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2015
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10510
+,"X":"-122.902203447036"
+,"Y":"49.2130852176085"
+,"json_geometry":{"type":"Point","coordinates":[-122.902203447036,49.2130852176085]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2026
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Terry Hughes Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10511
+,"X":"-122.913037109604"
+,"Y":"49.2210941256604"
+,"json_geometry":{"type":"Point","coordinates":[-122.913037109604,49.2210941256604]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2016
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":""
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10512
+,"X":"-122.904810157761"
+,"Y":"49.2147957496839"
+,"json_geometry":{"type":"Point","coordinates":[-122.904810157761,49.2147957496839]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":24
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10513
+,"X":"-122.904819739204"
+,"Y":"49.2136029156091"
+,"json_geometry":{"type":"Point","coordinates":[-122.904819739204,49.2136029156091]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":86
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Queens Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10514
+,"X":"-122.909329918321"
+,"Y":"49.216700860405"
+,"json_geometry":{"type":"Point","coordinates":[-122.909329918321,49.216700860405]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":730
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Moody Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10515
+,"X":"-122.927599840656"
+,"Y":"49.2132311560386"
+,"json_geometry":{"type":"Point","coordinates":[-122.927599840656,49.2132311560386]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2017
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Westminster Pier Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":null
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10516
+,"X":"-122.904810658687"
+,"Y":"49.20359166039"
+,"json_geometry":{"type":"Point","coordinates":[-122.904810658687,49.20359166039]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2018
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Westminster Pier Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":null
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10517
+,"X":"-122.904610600574"
+,"Y":"49.203740246112"
+,"json_geometry":{"type":"Point","coordinates":[-122.904610600574,49.203740246112]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2019
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Westminster Pier Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":null
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10518
+,"X":"-122.904441592796"
+,"Y":"49.2040334422136"
+,"json_geometry":{"type":"Point","coordinates":[-122.904441592796,49.2040334422136]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2029
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10519
+,"X":"-122.930449973872"
+,"Y":"49.1945704945134"
+,"json_geometry":{"type":"Point","coordinates":[-122.930449973872,49.1945704945134]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2030
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10520
+,"X":"-122.923188001731"
+,"Y":"49.1949511445035"
+,"json_geometry":{"type":"Point","coordinates":[-122.923188001731,49.1949511445035]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2031
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10521
+,"X":"-122.925615506485"
+,"Y":"49.1916602889449"
+,"json_geometry":{"type":"Point","coordinates":[-122.925615506485,49.1916602889449]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2032
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10522
+,"X":"-122.923037231885"
+,"Y":"49.1944042361634"
+,"json_geometry":{"type":"Point","coordinates":[-122.923037231885,49.1944042361634]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2033
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10523
+,"X":"-122.925897833249"
+,"Y":"49.1966870489055"
+,"json_geometry":{"type":"Point","coordinates":[-122.925897833249,49.1966870489055]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2034
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Port Royal"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10524
+,"X":"-122.955726442397"
+,"Y":"49.1772433374375"
+,"json_geometry":{"type":"Point","coordinates":[-122.955726442397,49.1772433374375]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2027
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":""
+,"ParkName":null
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10525
+,"X":"-122.950382820926"
+,"Y":"49.1983831199272"
+,"json_geometry":{"type":"Point","coordinates":[-122.950382820926,49.1983831199272]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2028
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":""
+,"ParkName":"Grimston Park"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10527
+,"X":"-122.943882406551"
+,"Y":"49.2020824423616"
+,"json_geometry":{"type":"Point","coordinates":[-122.943882406551,49.2020824423616]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2020
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":null
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10528
+,"X":"-122.914960320303"
+,"Y":"49.2019221443897"
+,"json_geometry":{"type":"Point","coordinates":[-122.914960320303,49.2019221443897]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2021
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":null
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10529
+,"X":"-122.919504733413"
+,"Y":"49.2004380815092"
+,"json_geometry":{"type":"Point","coordinates":[-122.919504733413,49.2004380815092]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2024
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":null
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10530
+,"X":"-122.926509470158"
+,"Y":"49.2177986601719"
+,"json_geometry":{"type":"Point","coordinates":[-122.926509470158,49.2177986601719]}
+}
+,{
+"json_featuretype":"DRINKING_FOUNTAINS"
+,"Name":"Drinking Fountain"
+,"StructureId":2022
+,"StructureType":"DRINKING FOUNTAIN"
+,"InstallYear":null
+,"TCACode":null
+,"BrandModel":null
+,"SupplierName":null
+,"ContractorName":null
+,"DesignerName":null
+,"Cost":null
+,"Comments":null
+,"ParkName":"Hume Park Lower"
+,"DedicationContact":null
+,"DedicationSuite":null
+,"DedicationCivicNumber":null
+,"DedicationStreetName":null
+,"DedicationCity":null
+,"DedicationProvince":null
+,"DedicationPostalCode":null
+,"DedicationPhone":null
+,"DedicationInscription":""
+,"DedicationDate":null
+,"DedicationComments":null
+,"OBJECTID":10532
+,"X":"-122.891428659667"
+,"Y":"49.2354699976687"
+,"json_geometry":{"type":"Point","coordinates":[-122.891428659667,49.2354699976687]}
+}
+]
