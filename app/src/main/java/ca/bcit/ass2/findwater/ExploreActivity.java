@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -29,6 +32,8 @@ public class ExploreActivity extends AppCompatActivity {
     private Intent intent;
     private ArrayList<Fountain> fountainList;
     private ListView lv;
+    private FountainAdapter adapter;
+    //private ShareActionProvider shareActionProvider;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -47,8 +52,29 @@ public class ExploreActivity extends AppCompatActivity {
             }
             return false;
         }
-
     };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.searchbar, menu);
+        /*
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                return false;
+            }
+        });
+         */
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +91,10 @@ public class ExploreActivity extends AppCompatActivity {
         ListAdapter myAdapter = new FountainAdapter(this, fountainList);
         lv= (ListView)findViewById(R.id.fountainListView);
         new GetFountain().execute();
+
+        Toolbar tb = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
 
@@ -101,14 +131,12 @@ public class ExploreActivity extends AppCompatActivity {
 
             if (jsonStr != null) {
                 try {
-                    //JSONObject jsonObj = new JSONObject(jsonStr);
-
                     // Getting JSON Array node
-                    JSONArray toonJsonArray = new JSONArray(jsonStr);
+                    JSONArray JsonArray = new JSONArray(jsonStr);
 
                     // looping through All Contacts
-                    for (int i = 0; i < toonJsonArray.length(); i++) {
-                        JSONObject c = toonJsonArray.getJSONObject(i);
+                    for (int i = 0; i < JsonArray.length(); i++) {
+                        JSONObject c = JsonArray.getJSONObject(i);
 
                         String parkName = c.getString("ParkName");
 
@@ -156,11 +184,7 @@ public class ExploreActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-
-            //Toon[] toonArray = toonList.toArray(new Toon[toonList.size()]);
-
-            FountainAdapter adapter = new FountainAdapter(ExploreActivity.this, fountainList);
-
+            adapter = new FountainAdapter(ExploreActivity.this, fountainList);
             // Attach the adapter to a ListView
             lv.setAdapter(adapter);
         }
