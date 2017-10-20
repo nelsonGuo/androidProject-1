@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -58,8 +59,11 @@ public class ExploreActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.searchbar, menu);
-        /*
-        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+
+        MenuItem item = menu.findItem(R.id.search);
+
+        SearchView searchView = (SearchView)item.getActionView();
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -68,11 +72,11 @@ public class ExploreActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-
+                adapter.getFilter().filter(newText);
                 return false;
             }
         });
-         */
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -85,7 +89,7 @@ public class ExploreActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        fountainList = new ArrayList<Fountain>();
+        fountainList = new ArrayList<>();
 
 
         ListAdapter myAdapter = new FountainAdapter(this, fountainList);
@@ -99,7 +103,7 @@ public class ExploreActivity extends AppCompatActivity {
 
 
     public String loadJSONFromAsset() {
-        String json = null;
+        String json;
         try {
             InputStream is = this.getAssets().open("DRINKING_FOUNTAINS.json");
             int size = is.available();
@@ -141,11 +145,7 @@ public class ExploreActivity extends AppCompatActivity {
                         String parkName = c.getString("ParkName");
 
                         // tmp hash map for single contact
-                        Fountain fountain = new Fountain();
-
-                        // adding each child node to HashMap key => value
-                        fountain.setParkName(parkName);
-
+                        Fountain fountain = new Fountain(parkName);
 
                         // adding contact to contact list
                         fountainList.add(fountain);
