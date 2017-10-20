@@ -1,6 +1,6 @@
 # Structures
 This is a instruction about structures in this app.
-For team better understands and develop.
+For team better understands and develops.
 
 ## Layout
 - activity_explore.xml
@@ -14,6 +14,8 @@ For team better understands and develop.
   
 - toolbar_main.xml
   This is for the toolbar.
+  
+  
   
   
 ## Java
