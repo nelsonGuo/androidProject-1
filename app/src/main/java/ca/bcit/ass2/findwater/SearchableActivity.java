@@ -25,6 +25,7 @@ public class SearchableActivity extends Activity {
     }
 
     private void doMySearch(String query) {
+
     }
 
 
