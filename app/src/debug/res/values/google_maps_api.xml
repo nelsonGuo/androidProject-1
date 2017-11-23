@@ -4,7 +4,7 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=67:9B:F0:F1:68:91:9D:10:76:13:67:C7:D4:11:45:E7:FC:5C:18:32%3Bca.bcit.ass2.findwater
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=67:9B:F0:F1:68:91:9D:10:76:13:67:C7:D4:11:45:E7:FC:5C:18:32%3Bca.bcit.project.findwater
 
     You can also add your credentials to an existing key, using these values:
 
@@ -20,7 +20,5 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        YOUR_KEY_HERE
-    </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBJRtqZ6SsOEh4RANtkXiH_GB8q9eq3wh4</string>
 </resources>

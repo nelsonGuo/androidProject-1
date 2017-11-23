@@ -1,4 +1,4 @@
-package ca.bcit.ass2.findwater;
+package ca.bcit.project.findwater;
 
 import java.util.List;
 
@@ -62,6 +62,8 @@ public class Fountain {
 
     private String Y;
 
+    private double Distance;
+
     private Json_geometry json_geometry;
 
     public Fountain(String parkName){
@@ -69,6 +71,12 @@ public class Fountain {
         this.ParkName = parkName;
     }
 
+    public void setDistance(double distance){
+        this.Distance = distance;
+    }
+    public double getDistance(){
+        return this.Distance;
+    }
     public void setJson_featuretype(String json_featuretype){
         this.json_featuretype = json_featuretype;
     }

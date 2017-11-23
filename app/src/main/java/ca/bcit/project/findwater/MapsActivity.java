@@ -1,4 +1,4 @@
-package ca.bcit.ass2.findwater;
+package ca.bcit.project.findwater;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;

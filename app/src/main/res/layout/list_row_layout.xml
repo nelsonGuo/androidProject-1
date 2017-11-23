@@ -12,8 +12,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="5dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/waterfountain" />
+        android:scaleType="centerCrop" />
 
     <TextView
         android:layout_above="@+id/distance"

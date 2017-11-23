@@ -1,4 +1,4 @@
-package ca.bcit.ass2.findwater;
+package ca.bcit.project.findwater;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -31,6 +33,8 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
         this.fountains = fountains;
         mStringFilterList = fountains;
     }
+
+
     @Override
     public int getCount() {
         return fountains.size();
@@ -48,9 +52,11 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
+        String parkname;
+        double longitude;
+        double latitude;
+        double distance;
         LayoutInflater mInflater = (LayoutInflater) _context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-
         convertView = null;
 
         // Check if an existing view is being reused, otherwise inflate the view
@@ -60,25 +66,66 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
             // Lookup view for data population
             TextView parkName = (TextView) convertView.findViewById(R.id.parkName);
             TextView Distance = (TextView) convertView.findViewById(R.id.distance);
+
             // TextView tvLastName = (TextView) convertView.findViewById(R.id.lastName);
             // Populate the data into the template view using the data object
-            //   tvFirstName.setText(toon.getFirstName());
-            Fountain fountain = fountains.get(position);
-            parkName.setText(fountain.getParkName());
-            Distance.setText("Distance: 0.9 KM");
+            //Fountain fountain = fountains.get(position);
+            parkname = fountains.get(position).getParkName();
+            //get x and y coordinate
+            longitude = Double.parseDouble(fountains.get(position).getX());
+            latitude = Double.parseDouble(fountains.get(position).getY());
+            distance = calculateDistance(longitude,latitude);
+            fountains.get(position).setDistance(distance);
+
+            parkName.setText(parkname);
+            Distance.setText(distance+"KM");
             ImageView imgOnePhoto = (ImageView) convertView.findViewById(R.id.fountainImage);
-            imgOnePhoto.setImageResource(R.drawable.waterfountain);
-            //DownloadImageTask dit = new DownloadImageTask(_context, imgOnePhoto);
-            //dit.execute(toon.getPicture());
 
-            //  if (toon.getPicture() != null) {
-            //    new ImageDownloaderTask(imgOnePhoto).execute(toon.getPicture());
-            //}
+            //replace the space with dash for park image and then get the id
+            int imageResource = _context.getResources().getIdentifier("@drawable/"+parkname.replace(' ','_').toLowerCase() , null, _context.getPackageName());
 
-            // Return the completed view to render on screen
+            if(imageResource != 0){
+                imgOnePhoto.setImageResource(imageResource);
+            }else {
+                imgOnePhoto.setImageResource(R.drawable.not_found);
+            }
         }
-
         return convertView;
+    }
+
+    /*
+     calculate the distance between current location and the locations of water fountain
+     */
+    public double calculateDistance(double x,double y){
+        GPSTracker gps = new GPSTracker(_context);
+        double longitude = gps.getLongitude();
+        double latitude = gps.getLatitude();
+
+        final int R = 6371;  //kilometers
+        double latDistance = Math.toRadians(latitude - y);
+        double lonDistance = Math.toRadians(longitude - x);
+        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+                + Math.cos(Math.toRadians(latitude)) * Math.cos(Math.toRadians(y))
+                * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        double distance = R * c ;
+        distance = Math.pow(distance, 2);
+
+        return  Math.round(Math.sqrt(distance)*100.0)/100.0;
+    }
+
+    public void sortBasedOnDistance(){
+
+        Collections.sort(fountains, new Comparator<Fountain>() {
+            @Override
+            public int compare(Fountain data1, Fountain data2) {
+                if( data1.getDistance() > data2.getDistance() )
+                    return 1;
+                else
+                    return 0;
+            }
+        });
+        notifyDataSetChanged();
     }
 
     @Override
@@ -116,11 +163,9 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
         protected void publishResults(CharSequence constraint, FilterResults results) {
 
             fountains = (ArrayList<Fountain>) results.values;
+
             notifyDataSetChanged();
         }
-
-
-
     }
 
 

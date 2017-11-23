@@ -1,11 +1,14 @@
-package ca.bcit.ass2.findwater;
+package ca.bcit.project.findwater;
 
-import android.content.Context;
+import android.Manifest;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
@@ -13,7 +16,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ListAdapter;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -27,15 +30,15 @@ import java.util.ArrayList;
 
 public class ExploreActivity extends AppCompatActivity {
 
-    Context _context;
 
+    private  static final int REQUEST_LOCATION =1;
     private String TAG = ExploreActivity.class.getSimpleName();
-    private Intent intent;
+    //private Intent intent;
     private ArrayList<Fountain> fountainList;
     private ListView lv;
     private FountainAdapter adapter;
-    //private ShareActionProvider shareActionProvider;
 
+    //private ShareActionProvider shareActionProvider;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -47,7 +50,7 @@ public class ExploreActivity extends AppCompatActivity {
                 case R.id.navigation_plan:
                     return true;
                 case R.id.navigation_map:
-                    intent = new Intent(ExploreActivity.this, MapsActivity.class);
+                    Intent intent = new Intent(ExploreActivity.this, MapsActivity.class);
                     startActivity(intent);
                     return true;
             }
@@ -85,23 +88,34 @@ public class ExploreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
 
-        //mTextMessage = (TextView) findViewById(R.id.message);
+        //ask user for gps permission
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
         fountainList = new ArrayList<>();
-
-
-        ListAdapter myAdapter = new FountainAdapter(this, fountainList);
         lv= (ListView)findViewById(R.id.fountainListView);
         new GetFountain().execute();
 
         Toolbar tb = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(tb);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+                fab.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                                String url = "https://www.newwestcity.ca/parks-and-recreation/parks";
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setData(Uri.parse(url));
+                                startActivity(intent);
+                           }
+         });
     }
 
-
+/*
+    get json data from local resource
+ */
     public String loadJSONFromAsset() {
         String json;
         try {
@@ -146,10 +160,10 @@ public class ExploreActivity extends AppCompatActivity {
 
                         // tmp hash map for single contact
                         Fountain fountain = new Fountain(parkName);
-
+                        fountain.setX(c.getString("X"));
+                        fountain.setY(c.getString("Y"));
                         // adding contact to contact list
                         fountainList.add(fountain);
-
                     }
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());
@@ -175,22 +189,20 @@ public class ExploreActivity extends AppCompatActivity {
                                 .show();
                     }
                 });
-
             }
-
             return null;
         }
 
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
+
             adapter = new FountainAdapter(ExploreActivity.this, fountainList);
-            // Attach the adapter to a ListView
             lv.setAdapter(adapter);
+
+           // adapter.sortBasedOnDistance();
+
+            // Attach the adapter to a ListView
         }
-
-
     }
-
-
 }
