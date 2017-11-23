@@ -5,4 +5,4 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ca.bcit.ass2.findwater.MapsActivity" />
+    tools:context="ca.bcit.project.findwater.MapsActivity" />
