@@ -1,4 +1,4 @@
-package ca.bcit.ass2.findwater;
+package ca.bcit.project.findwater;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

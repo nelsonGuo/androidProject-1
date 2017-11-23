@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ca.bcit.ass2.findwater.ExploreActivity">
+    tools:context="ca.bcit.project.findwater.ExploreActivity">
 
-    <FrameLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </FrameLayout>
+    <include layout="@layout/toolbar_main" android:id="@+id/toolbar"/>
 
     <ListView
+        android:layout_below="@+id/toolbar"
         android:id="@+id/fountainListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation" >
 
     </android.support.design.widget.BottomNavigationView>
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@android:drawable/ic_dialog_info"
+            android:layout_above="@id/navigation"
+            android:layout_alignEnd="@id/navigation"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+
+

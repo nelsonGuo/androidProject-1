@@ -5,4 +5,5 @@
     <string name="title_map">Map</string>
     <string name="title_activity_maps">Map</string>
     <string name="search_hint">Enter a park name...</string>
+    <string name="search_title">Search</string>
 </resources>
