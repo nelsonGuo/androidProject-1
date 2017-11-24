@@ -237,12 +237,9 @@ public class Fountain {
 class Json_geometry
 {
     private String type;
-
     private List<Double> coordinates;
 
-    public void setType(String type){
-        this.type = type;
-    }
+    public void setType(String type){this.type = type;}
     public String getType(){
         return this.type;
     }
