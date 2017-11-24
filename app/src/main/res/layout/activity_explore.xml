@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ca.bcit.ass2.findwater.ExploreActivity">
+    tools:context="ca.bcit.project.findwater.ExploreActivity">
 
     <include layout="@layout/toolbar_main" android:id="@+id/toolbar"/>
 
@@ -27,6 +27,15 @@
 
     </android.support.design.widget.BottomNavigationView>
 
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@android:drawable/ic_dialog_info"
+            android:layout_above="@id/navigation"
+            android:layout_alignEnd="@id/navigation"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
 
 </RelativeLayout>
 
