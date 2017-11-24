@@ -27,6 +27,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class ExploreActivity extends AppCompatActivity {
 
@@ -37,6 +39,9 @@ public class ExploreActivity extends AppCompatActivity {
     private ArrayList<Fountain> fountainList;
     private ListView lv;
     private FountainAdapter adapter;
+    double longitude;
+    double latitude;
+    double distance;
 
     //private ShareActionProvider shareActionProvider;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -75,7 +80,6 @@ public class ExploreActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
                 return false;
             }
         });
@@ -137,6 +141,37 @@ public class ExploreActivity extends AppCompatActivity {
      */
     private class GetFountain extends AsyncTask<Void, Void, Void> {
 
+        /*
+         calculate the distance between current location and the locations of water fountain
+         */
+        public double calculateDistance(double x,double y){
+            GPSTracker gps = new GPSTracker(ExploreActivity.this);
+            double longitude = gps.getLongitude();
+            double latitude = gps.getLatitude();
+
+            final int R = 6371;  //kilometers
+            double latDistance = Math.toRadians(latitude - y);
+            double lonDistance = Math.toRadians(longitude - x);
+            double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+                    + Math.cos(Math.toRadians(latitude)) * Math.cos(Math.toRadians(y))
+                    * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
+            double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            double distance = R * c ;
+            distance = Math.pow(distance, 2);
+
+            return  Math.round(Math.sqrt(distance)*100.0)/100.0;
+        }
+
+        public void sortBasedOnDistance(){
+
+            Collections.sort(fountainList, new Comparator<Fountain>() {
+                @Override
+                public int compare(Fountain data1, Fountain data2) {
+                    return Double.compare(data1.getDistance(),data2.getDistance());
+                }
+            });
+        }
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -162,6 +197,12 @@ public class ExploreActivity extends AppCompatActivity {
                         Fountain fountain = new Fountain(parkName);
                         fountain.setX(c.getString("X"));
                         fountain.setY(c.getString("Y"));
+
+                        longitude = Double.parseDouble(fountain.getX());
+                        latitude = Double.parseDouble(fountain.getY());
+                        distance = calculateDistance(longitude,latitude);
+                        fountain.setDistance(distance);
+
                         // adding contact to contact list
                         fountainList.add(fountain);
                     }
@@ -196,12 +237,10 @@ public class ExploreActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-
+            sortBasedOnDistance();
             adapter = new FountainAdapter(ExploreActivity.this, fountainList);
+            adapter.notifyDataSetChanged();
             lv.setAdapter(adapter);
-
-           // adapter.sortBasedOnDistance();
-
             // Attach the adapter to a ListView
         }
     }
