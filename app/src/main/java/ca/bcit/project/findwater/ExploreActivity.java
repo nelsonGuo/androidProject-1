@@ -19,11 +19,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -39,6 +37,7 @@ public class ExploreActivity extends AppCompatActivity {
     private ArrayList<Fountain> fountainList;
     private ListView lv;
     private FountainAdapter adapter;
+    private GPSTracker gps;
     double longitude;
     double latitude;
     double distance;
@@ -80,6 +79,7 @@ public class ExploreActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
                 return false;
             }
         });
@@ -94,7 +94,7 @@ public class ExploreActivity extends AppCompatActivity {
 
         //ask user for gps permission
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION);
-
+        gps = new GPSTracker(ExploreActivity.this);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         fountainList = new ArrayList<>();
@@ -145,10 +145,8 @@ public class ExploreActivity extends AppCompatActivity {
          calculate the distance between current location and the locations of water fountain
          */
         public double calculateDistance(double x,double y){
-            GPSTracker gps = new GPSTracker(ExploreActivity.this);
             double longitude = gps.getLongitude();
             double latitude = gps.getLatitude();
-
             final int R = 6371;  //kilometers
             double latDistance = Math.toRadians(latitude - y);
             double lonDistance = Math.toRadians(longitude - x);
@@ -163,7 +161,6 @@ public class ExploreActivity extends AppCompatActivity {
         }
 
         public void sortBasedOnDistance(){
-
             Collections.sort(fountainList, new Comparator<Fountain>() {
                 @Override
                 public int compare(Fountain data1, Fountain data2) {
@@ -239,9 +236,8 @@ public class ExploreActivity extends AppCompatActivity {
             super.onPostExecute(result);
             sortBasedOnDistance();
             adapter = new FountainAdapter(ExploreActivity.this, fountainList);
-            adapter.notifyDataSetChanged();
             lv.setAdapter(adapter);
-            // Attach the adapter to a ListView
+
         }
     }
 }
