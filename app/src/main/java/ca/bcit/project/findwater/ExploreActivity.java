@@ -54,7 +54,11 @@ public class ExploreActivity extends AppCompatActivity {
                 case R.id.navigation_plan:
                     return true;
                 case R.id.navigation_map:
+                    String jsonStr = loadJSONFromAsset();
                     Intent intent = new Intent(ExploreActivity.this, MapsActivity.class);
+                    intent.putExtra("Json",jsonStr);
+                    intent.putExtra("Xc",gps.getLongitude());
+                    intent.putExtra("Yc",gps.getLatitude());
                     startActivity(intent);
                     return true;
             }
