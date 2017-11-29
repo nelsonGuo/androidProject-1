@@ -1,10 +1,8 @@
 package ca.bcit.project.findwater;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
+import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -52,8 +50,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Double Yc = intent.getExtras().getDouble("Yc");
 
         // Add a marker in Sydney and move the camera
-        LatLng fountain = new LatLng(Xc, Yc);
+        LatLng fountain = new LatLng(Yc, Xc);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(fountain));
+        mMap.addMarker(new MarkerOptions().position(fountain).title("Current location"));
 
         if (jsonStr != null) {
             try {
@@ -72,8 +71,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //                    if (installYear != "null")
 //                        display += "Install year: "+installYear + "\n";
 
-                    Xc = Double.parseDouble(c.getString("X"));
-                    Yc = Double.parseDouble(c.getString("Y"));
+                    Xc = Double.parseDouble(c.getString("Y"));
+                    Yc = Double.parseDouble(c.getString("X"));
                     fountain = new LatLng(Xc, Yc);
                     String comments = c.getString("Comments");
                     if (comments != "null"){
