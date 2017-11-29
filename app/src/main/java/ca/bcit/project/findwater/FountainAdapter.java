@@ -29,7 +29,7 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
     public FountainAdapter(Context context, ArrayList<Fountain> fountains) {
         this._context = context;
         this.fountains = fountains;
-        mStringFilterList = fountains;
+        this.mStringFilterList = fountains;
     }
 
 
@@ -100,6 +100,7 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
                     if ((mStringFilterList.get(i).getParkName().toUpperCase()).contains(constraint.toString().toUpperCase())) {
 
                         Fountain fountain = new Fountain(mStringFilterList.get(i).getParkName());
+                        fountain.setDistance(mStringFilterList.get(i).getDistance());
                         filterList.add(fountain);
                     }
                 }
