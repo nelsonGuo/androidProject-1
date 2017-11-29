@@ -52,6 +52,12 @@ public class ExploreActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     return true;
                 case R.id.navigation_plan:
+                    String jsonString = loadJSONFromAsset();
+                    Intent i = new Intent(ExploreActivity.this, PlanActivity.class);
+                    i.putExtra("Json",jsonString);
+                    i.putExtra("Xc",gps.getLongitude());
+                    i.putExtra("Yc",gps.getLatitude());
+                    startActivity(i);
                     return true;
                 case R.id.navigation_map:
                     String jsonStr = loadJSONFromAsset();
@@ -180,6 +186,7 @@ public class ExploreActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... arg0) {
+            MyDbHelper helper = new MyDbHelper(ExploreActivity.this);
 
             String jsonStr = loadJSONFromAsset();
 
@@ -198,14 +205,18 @@ public class ExploreActivity extends AppCompatActivity {
                         Fountain fountain = new Fountain(parkName);
                         fountain.setX(c.getString("X"));
                         fountain.setY(c.getString("Y"));
+                        fountain.setFavorite(0);
 
                         longitude = Double.parseDouble(fountain.getX());
                         latitude = Double.parseDouble(fountain.getY());
                         distance = calculateDistance(longitude,latitude);
                         fountain.setDistance(distance);
 
+                        // insert fountain to SQLite database
+                        helper.insertFountain(helper.getWritableDatabase(),fountain);
                         // adding contact to contact list
                         fountainList.add(fountain);
+
                     }
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());

@@ -10,6 +10,8 @@ public class Fountain {
 
    private String json_featuretype;
 
+    private int Favorite;
+
     private String Name;
 
     private int StructureId;
@@ -71,6 +73,8 @@ public class Fountain {
         this.ParkName = parkName;
     }
 
+    public void setFavorite(int Favorite){ this.Favorite = Favorite;}
+    public int getFavorite() {return this.Favorite;}
     public void setDistance(double distance){
         this.Distance = distance;
     }
