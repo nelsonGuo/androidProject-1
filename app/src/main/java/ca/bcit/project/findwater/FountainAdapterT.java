@@ -1,5 +1,9 @@
 package ca.bcit.project.findwater;
 
+/**
+ * Created by Dan on 2017-11-29.
+ */
+
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,26 +14,30 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * Created by nelson on 10/11/2017.
  */
 
-public class FountainAdapter extends BaseAdapter implements Filterable {
+public class FountainAdapterT extends BaseAdapter implements Filterable {
 
     private Context _context;
     private List<Fountain> fountains;
     private List<Fountain> mStringFilterList;
     private ValueFilter valueFilter;
+    private ToggleButton toggleButton;
 
 
-    public FountainAdapter(Context context, ArrayList<Fountain> fountains) {
+
+    public FountainAdapterT(Context context, ArrayList<Fountain> fountains) {
         this._context = context;
         this.fountains = fountains;
-        this.mStringFilterList = fountains;
+        mStringFilterList = fountains;
     }
 
 
@@ -44,13 +52,14 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
     }
 
     @Override
-    public long getItemId(int position) {
+    public long getItemId(final int position) {
         return fountains.indexOf(getItem(position));
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        String parkname;
+
+        final String parkname;
         LayoutInflater mInflater = (LayoutInflater) _context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         convertView = null;
         final MyDbHelper helper = new MyDbHelper(this._context);
@@ -60,7 +69,7 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
             convertView = mInflater.inflate(R.layout.list_row_layout, parent, false);
 
             // Lookup view for data population
-            TextView parkName = (TextView) convertView.findViewById(R.id.parkName);
+            final TextView parkName = (TextView) convertView.findViewById(R.id.parkName);
             TextView Distance = (TextView) convertView.findViewById(R.id.distance);
 
             parkname = fountains.get(position).getParkName();
@@ -69,7 +78,43 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
             final ImageView favorite = (ImageView) convertView.findViewById(R.id.favorite);
 
             //replace the space with dash for park image and then get the id
-            int imageResource = _context.getResources().getIdentifier("@drawable/"+parkname.replace(' ','_').toLowerCase() , null, _context.getPackageName());
+            final int imageResource = _context.getResources().getIdentifier("@drawable/"+
+                    parkname.replace(' ','_').toLowerCase() , null, _context.getPackageName());
+
+            // display favorite icon
+
+            final int FavoriteStatus = helper.getFavoriteStatus(fountains.get(position).getX(),
+                    fountains.get(position).getY());
+
+            // test
+            TextView test = (TextView) convertView.findViewById(R.id.test);
+            test.setText(Integer.toString(FavoriteStatus));
+
+            if(FavoriteStatus == 1) {
+                favorite.setImageResource(R.drawable.ic_action_favorite);
+            } else {
+                favorite.setImageResource(R.drawable.ic_action_favorite_border);
+            }
+
+            favorite.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    if(FavoriteStatus == 1) {
+                        // update favorite status to 'No'
+                        fountains.get(position).setFavorite(0);
+                        helper.updateFavorite(fountains.get(position).getX(),
+                                fountains.get(position).getY(), 0);
+                        // display favorite border icon
+                        favorite.setImageResource(R.drawable.ic_action_favorite_border);
+                    } else {
+                        // update favorite status to 'Yes'
+                        fountains.get(position).setFavorite(1);
+                        helper.updateFavorite(fountains.get(position).getX(),
+                                fountains.get(position).getY(), 1);
+                        // display favorite icon
+                        favorite.setImageResource(R.drawable.ic_action_favorite);
+                    }
+                }
+            });
 
             if(imageResource != 0){
                 parkName.setText(parkname);
@@ -78,39 +123,11 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
                 parkName.setText("Myth Fountain");
                 imgOnePhoto.setImageResource(R.drawable.not_found);
             }
-
-            // display favorite icon
-            final int FavoriteStatus = helper.getFavoriteStatus(fountains.get(position).getX(),
-                    fountains.get(position).getY());
-
-            if(FavoriteStatus == 1) {
-                favorite.setImageResource(R.drawable.ic_action_favorite);
-                Distance.setText(helper.getDistance(fountains.get(position).getX(),
-                        fountains.get(position).getY())+"KM");
-            } else {
-                favorite.setImageResource(R.drawable.ic_action_favorite_border);
-            }
-
-            favorite.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    if(FavoriteStatus == 1) {
-                        // update favorite status to 0
-                        helper.updateFavorite(fountains.get(position).getX(),
-                                fountains.get(position).getY(), 0);
-                        // display favorite border icon
-                        favorite.setImageResource(R.drawable.ic_action_favorite_border);
-                    } else {
-                        // update favorite status to 1
-                        helper.updateFavorite(fountains.get(position).getX(),
-                                fountains.get(position).getY(), 1);
-                        // display favorite icon
-                        favorite.setImageResource(R.drawable.ic_action_favorite);
-                    }
-                }
-            });
         }
+
         return convertView;
     }
+
 
 
     @Override
@@ -132,7 +149,6 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
                     if ((mStringFilterList.get(i).getParkName().toUpperCase()).contains(constraint.toString().toUpperCase())) {
 
                         Fountain fountain = new Fountain(mStringFilterList.get(i).getParkName());
-                        fountain.setDistance(mStringFilterList.get(i).getDistance());
                         filterList.add(fountain);
                     }
                 }
@@ -152,6 +168,10 @@ public class FountainAdapter extends BaseAdapter implements Filterable {
             notifyDataSetChanged();
         }
     }
+
+    /*
+    public void
+     */
 
 
 }
